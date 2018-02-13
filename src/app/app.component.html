@@ -3,18 +3,60 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<!-- displaying new component variable -->
+<h3><app-new-cmp></app-new-cmp> </h3>
+
+<!-- using for loop -->
+<div> Months :
+   <select>
+      <option *ngFor="let i of months">{{i}}</option>
+   </select>
+</div>
+
+<!-- using if condidtion -->
+<div>
+  <span *ngIf = "isavailable">Condition is valid.</span> 
+  //over here based on if condition the text condition is valid is displayed. 
+  If the value of isavailable is set to false it will not display the text.
+</div>
+
+<!-- using if and else both -->
+
+<div>
+  <span *ngIf="isavailable; else condition3">Condition is valid.</span>
+  <ng-template #condition3>Condition is invalid</ng-template>
+</div>
+
+<!-- using if then and else -->
+<div>
+  <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
+  <ng-template #condition1>Condition is valid</ng-template>
+  <ng-template #condition2>Condition is invalid</ng-template>
+</div>
+
+<!-- adding a button and triggering a event -->
+<button (click)="myClickFunction($event)">
+  Click Me
+</button>
+
+<!-- adding change function to months dropdown -->
+
+<div> Months :
+  <select (change) = "changemonths($event)">
+     <option *ngFor = "let i of months">{{i}}</option>
+  </select>
+</div>
+<br/>
+
+<!-- using if and then and else -->
+<div>
+  <span *ngIf = "isavailable;then condition4 else condition5">Condition is valid.</span>
+  <ng-template #condition4>Condition is valid from template</ng-template>
+  <ng-template #condition5>Condition is invalid from template</ng-template>
+</div>
+
 
