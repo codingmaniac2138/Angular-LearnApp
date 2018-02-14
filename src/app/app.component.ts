@@ -10,6 +10,9 @@ export class AppComponent {
   months = ["January", "Feburary", "March", "April", "May", 
             "June", "July", "August", "September",
             "October", "November", "December"];
+  todaydate = new Date();
+  jsonval = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}};
+         
   isavailable = true;   //variable is set to true
   myClickFunction(event) { 
       //just added console.log which will display the event details in browser on click of the button.

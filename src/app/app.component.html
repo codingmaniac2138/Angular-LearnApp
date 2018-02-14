@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to {{ title | uppercase }}!
   </h1>
 
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
@@ -59,4 +59,49 @@
   <ng-template #condition5>Condition is invalid from template</ng-template>
 </div>
 
+<!-- creating custom directive -->
+<div style="text-align:center">
+  <span changeText >Welcome to {{title | lowercase}}  </span>
+</div>
 
+<!-- text transformation -->
+<b>{{title | uppercase}}</b><br/>
+<b>{{title | lowercase}}</b>
+
+<!-- pipes in angular 4 examples -->
+<div class = "body22" style = "width:100%;">
+  <div style = "width:40%;float:left;border:solid 1px black;">
+     <h1>Uppercase Pipe</h1>
+     <b>{{title | uppercase}}</b><br/>
+     
+     <h1>Lowercase Pipe</h1>
+     <b>{{title | lowercase}}</b>
+     
+     <h1>Currency Pipe</h1>
+     <b>{{6589.23 | currency:"USD"}}</b><br/>
+     <b>{{6589.23 | currency:"USD":true}}</b> //Boolean true is used to get the sign of the currency.
+     
+     <h1>Date pipe</h1>
+     <b>{{todaydate | date:'d/M/y'}}</b><br/>
+     <b>{{todaydate | date:'shortTime'}}</b>
+     
+     <h1>Decimal Pipe</h1>
+     <b>{{ 454.78787814 | number: '3.4-4' }}</b> // 3 is for main integer, 4 -4 are for integers to be displayed.
+  </div>
+  
+  <div style = "width:40%;float:left;border:solid 1px black;">
+     <h1>Json Pipe</h1>
+     <b>{{ jsonval | json }}</b>
+     <h1>Percent Pipe</h1>
+     <b>{{00.54565 | percent}}</b>
+     <h1>Slice Pipe</h1>
+     <b>{{months | slice:2:6}}</b> 
+     // here 2 and 6 refers to the start and the end index
+  </div>
+</div>
+
+<!-- testing custom built pipe sqrt -->
+<h1>Custom Pipe</h1>
+<b>Square root of 25 is: {{25 | sqrt}}</b>
+<br/>
+<b>Square root of 729 is: {{729 | sqrt}}</b>
