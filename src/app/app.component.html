@@ -1,75 +1,140 @@
+<!-- navbar -->
+<div>
+<ul>
+  <li><a class="active" href="#home">AMAZE</a></li>
+  <li><a href="#news"><b>Area</b> <br> Coding Review </a></li>
+  <li><a href="#contact"><b>Workspace </b><br> My Tasks</a></li>
+</ul>
+</div>
+ <!-- navbar end -->
+
+<br>
+<br>
+<br>
+<!-- table records -->
+<div>
+<table id="tbl">
+  <tr>
+    <th>Status</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Discharg Date</th>
+  </tr>
+  <tr>
+    <td>+ New</td>
+    <td>John</td>
+    <td>Doe</td>
+    <td>11/11/2017</td>
+
+  </tr>
+  <tr>
+    <td>+ New</td>
+    <td>Tom</td>
+    <td>Smith</td>
+    <td>11/12/2017</td>
+
+  </tr>
+  <tr>
+    <td>In Progress</td>
+    <td>Jeff</td>
+    <td>Jhone</td>
+    <td>12/10/2017</td>
+
+  </tr>
+
+<tr>
+  <td>In Progress</td>
+  <td>Jane</td>
+  <td>Robert</td>
+  <td>12/10/2017</td>
+
+</tr>
+
+<tr>
+  <td>+ New</td>
+  <td>Jane</td>
+  <td>Mark</td>
+  <td>1/10/2017</td>
+
+</tr>
+</table>
+</div>
+
+<a routerLink = "new-cmp">New component</a>
+<router-outlet></router-outlet>
+<!-- table end -->
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div class = "" style="text-align:center">
   <h1>
     Welcome to {{ title | uppercase }}!
   </h1>
 
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
+</div> -->
 
 <!-- displaying new component variable -->
-<h3><app-new-cmp></app-new-cmp> </h3>
+<!-- <h3><app-new-cmp></app-new-cmp> </h3> -->
 
 <!-- using for loop -->
-<div> Months :
+<!-- <div> Months :
    <select>
       <option *ngFor="let i of months">{{i}}</option>
    </select>
-</div>
+</div> -->
 
 <!-- using if condidtion -->
-<div>
+<!-- <div>
   <span *ngIf = "isavailable">Condition is valid.</span> 
   //over here based on if condition the text condition is valid is displayed. 
   If the value of isavailable is set to false it will not display the text.
-</div>
+</div> -->
 
 <!-- using if and else both -->
 
-<div>
+<!-- <div>
   <span *ngIf="isavailable; else condition3">Condition is valid.</span>
   <ng-template #condition3>Condition is invalid</ng-template>
-</div>
+</div> -->
 
 <!-- using if then and else -->
-<div>
+<!-- <div>
   <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
   <ng-template #condition1>Condition is valid</ng-template>
   <ng-template #condition2>Condition is invalid</ng-template>
-</div>
+</div> -->
 
 <!-- adding a button and triggering a event -->
-<button (click)="myClickFunction($event)">
+<!-- <button (click)="myClickFunction($event)">
   Click Me
-</button>
+</button> -->
 
 <!-- adding change function to months dropdown -->
 
-<div> Months :
+<!-- <div> Months :
   <select (change) = "changemonths($event)">
      <option *ngFor = "let i of months">{{i}}</option>
   </select>
 </div>
-<br/>
+<br/> -->
 
 <!-- using if and then and else -->
-<div>
+<!-- <div>
   <span *ngIf = "isavailable;then condition4 else condition5">Condition is valid.</span>
   <ng-template #condition4>Condition is valid from template</ng-template>
   <ng-template #condition5>Condition is invalid from template</ng-template>
-</div>
+</div> -->
 
 <!-- creating custom directive -->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <span changeText >Welcome to {{title | lowercase}}  </span>
-</div>
+</div> -->
 
 <!-- text transformation -->
-<b>{{title | uppercase}}</b><br/>
+<!-- <b>{{title | uppercase}}</b><br/>
 <b>{{title | lowercase}}</b>
-
+ -->
 <!-- pipes in angular 4 examples -->
-<div class = "body22" style = "width:100%;">
+<!-- <div class = "body22" style = "width:100%;">
   <div style = "width:40%;float:left;border:solid 1px black;">
      <h1>Uppercase Pipe</h1>
      <b>{{title | uppercase}}</b><br/>
@@ -98,10 +163,10 @@
      <b>{{months | slice:2:6}}</b> 
      // here 2 and 6 refers to the start and the end index
   </div>
-</div>
+</div> -->
 
 <!-- testing custom built pipe sqrt -->
-<h1>Custom Pipe</h1>
+<!-- <h1>Custom Pipe</h1>
 <b>Square root of 25 is: {{25 | sqrt}}</b>
 <br/>
-<b>Square root of 729 is: {{729 | sqrt}}</b>
+<b>Square root of 729 is: {{729 | sqrt}}</b> -->

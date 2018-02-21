@@ -1,3 +1,56 @@
-.body22 {
-background:red;
+/* Primary color blue: #062466
+FONT COLOR very light blue: #A5B0C8
+background color light gray: #ebebeb */
+
+/* Navbar design css */
+.navbar {
+background:#062466;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #062466;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #A5B0C8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Table css design */
+#tbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+#tbl tr:hover {background-color: #ddd;}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#062466;
+    color:#A5B0C8;
 }
