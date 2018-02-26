@@ -3,8 +3,8 @@ FONT COLOR very light blue: #A5B0C8
 background color light gray: #ebebeb */
 
 /* Navbar design css */
-.glyphicon {
-}
+/* .glyphicon {
+} */
 .navbar {
 background:#062466;
 }
@@ -41,8 +41,11 @@ li a:hover {
     border-collapse: collapse;
     width: 100%;
 }
+#tbl th{
+    color: #062466;
+}
 
-#tbl td, #tbl th {
+#tbl td, #tbl  {
     border: 2px solid #ddd;
     padding: 8px;
 }
