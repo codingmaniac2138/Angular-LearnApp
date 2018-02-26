@@ -3,27 +3,31 @@ FONT COLOR very light blue: #A5B0C8
 background color light gray: #ebebeb */
 
 /* Navbar design css */
+.glyphicon {
+}
 .navbar {
 background:#062466;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     overflow: hidden;
     background-color: #062466;
 }
 
 li {
     float: left;
+        padding: 8px 8px;
+
 }
 
 li a {
     display: block;
     color: #A5B0C8;
     text-align: center;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     text-decoration: none;
 }
 
@@ -39,18 +43,27 @@ li a:hover {
 }
 
 #tbl td, #tbl th {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 8px;
 }
 
 #tbl tr:nth-child(even){background-color: #f2f2f2;}
+#tbl tr:nth-child(odd){background-color: #f2f2f2;}
 
-#tbl tr:hover {background-color: #ddd;}
+/* #tbl td{
+    background-color: white;
+} */
+#tbl tr:hover {background-color:slategray;}
 
 #tbl th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color:#062466;
+    /* background-color:#062466; */
     color:#A5B0C8;
 }
+
+
+/* #tbl tr:hover{
+    background-color: #ddd;
+} */
