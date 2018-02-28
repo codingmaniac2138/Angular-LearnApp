@@ -39,6 +39,37 @@ li a:hover {
 }
 
 /* Table css design */
+#tbl1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl1 td, #tbl1  {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+#tbl1 tr:nth-child(even){background-color: #f2f2f2;}
+#tbl1 tr:nth-child(odd){background-color: #f2f2f2;}
+
+/* #tbl td{
+    background-color: white;
+} */
+#tbl1 tr:hover {background-color:slategray;}
+
+#tbl1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    /* background-color:#062466; */
+    color:#A5B0C8;
+}
+
+
+/* #tbl tr:hover{
+    background-color: #ddd;
+} */
 #tbl {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -65,8 +96,3 @@ li a:hover {
     /* background-color:#062466; */
     color:#A5B0C8;
 }
-
-
-/* #tbl tr:hover{
-    background-color: #ddd;
-} */
